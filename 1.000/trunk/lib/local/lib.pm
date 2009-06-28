@@ -239,7 +239,7 @@ sub ensure_dir_structure_for {
     print MODULEBUILDRC qq{install  --install_base  ${path}\n}
       or Carp::croak("Couldn't write line to ${modulebuildrc_path}: $!");
     close MODULEBUILDRC
-      or Carp::croak("Couldn't close file ${modulebuildrc_path}: $@");
+      or Carp::croak("Couldn't close file ${modulebuildrc_path}: $!");
   }
 
   return $path;
