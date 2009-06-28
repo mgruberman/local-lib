@@ -695,6 +695,10 @@ Matt S Trout <mst@shadowcat.co.uk> http://www.shadowcat.co.uk/
 
 auto_install fixes kindly sponsored by http://www.takkle.com/
 
+=head1 SOURCE AVAILABILITY
+
+This source is http://dev.catalyst.perl.org/repos/bast/local-lib/.
+
 =head1 CONTRIBUTORS
 
 Patches to correctly output commands for csh style shells, as well as some
