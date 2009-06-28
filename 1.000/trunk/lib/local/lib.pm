@@ -235,11 +235,11 @@ sub ensure_dir_structure_for {
   } else {
     warn "Attempting to create file ${modulebuildrc_path}\n";
     open MODULEBUILDRC, '>', $modulebuildrc_path
-      || Carp::croak("Couldn't open ${modulebuildrc_path} for writing: $!");
+      or Carp::croak("Couldn't open ${modulebuildrc_path} for writing: $!");
     print MODULEBUILDRC qq{install  --install_base  ${path}\n}
-      || Carp::croak("Couldn't write line to ${modulebuildrc_path}: $!");
+      or Carp::croak("Couldn't write line to ${modulebuildrc_path}: $!");
     close MODULEBUILDRC
-      || Carp::croak("Couldn't close file ${modulebuildrc_path}: $@");
+      or Carp::croak("Couldn't close file ${modulebuildrc_path}: $@");
   }
 
   return $path;
